@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서 - 홍길동</title>
+    <link rel="stylesheet" href="resume_style.css">
+</head>
+<body>
+
+    <!-- 사이드바 -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#introduce">이력서</a></li>
+                <li><a href="#portfolio">포트폴리오</a></li>
+                <li><a href="#pdf">PDF 내려받기</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content">
+
+        <!-- 헤더: 이름 + 연락처 + 사진 -->
+        <header class="profile-header">
+            <div class="profile-info">
+                <h1 class="profile-name">Hong gil dong</h1>
+                <div class="profile-contacts">
+                    <span>📱 010-1234-5678</span>
+                    <span>📧 hong@example.com</span>
+                    <span>🐙 <a href="https://github.com/본인아이디" target="_blank">홍길동's Github</a></span>
+                </div>
+            </div>
+            <div class="profile-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/256px-Default_pfp.svg.png" alt="프로필 사진">
+            </div>
+        </header>
+
+        <hr>
+
+        <!-- Introduce -->
+        <section id="introduce" class="section">
+            <h2 class="section-title">Introduce</h2>
+            <p>
+                데이터의 가치를 창출하고 효율적인 시스템을 설계하는 것을 즐기는 5년 차 Python 기반 풀스택 엔지니어입니다.
+                복잡한 비즈니스 로직을 심플한 코드로 풀어내는 것을 좋아하며, 단순한 기능 구현을 넘어 성능 최적화와 인프라 자동화에 깊은 관심을 가지고 있습니다.
+                사용자 경험과 시스템 안정성 사이의 균형을 맞추며 팀과 함께 성장하는 환경을 지향합니다.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skill-group">
+                <h3 class="skill-category">LANGUAGE</h3>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 class="skill-category">FRAMEWORK</h3>
+                <div class="skill-tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Next.js</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 class="skill-category">DATABASE</h3>
+                <div class="skill-tags">
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Redis</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 class="skill-category">INFRA</h3>
+                <div class="skill-tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Terraform</span>
+                    <span class="tag">GitHub Actions</span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+
+            <!-- 카카오게임즈 -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3 class="exp-company">카카오게임즈</h3>
+                    <span class="exp-period">2022.10 – 2025.03</span>
+                </div>
+                <p class="exp-role">Full-Stack Developer <span class="exp-level">대리</span></p>
+
+                <div class="exp-project">
+                    <div class="exp-project-header">
+                        <p class="exp-project-title">신규 모바일 게임 통합 관리 시스템 구축</p>
+                        <span class="exp-period">2023.05 – 2025.03</span>
+                    </div>
+                    <ul>
+                        <li>Django 및 FastAPI 기반의 고성능 마이크로서비스 설계 및 개발</li>
+                        <li>React와 TypeScript를 활용한 실시간 모니터링 대시보드 구현</li>
+                        <li>PostgreSQL 최적화 및 AWS 인프라 자동화 (Terraform)</li>
+                    </ul>
+                </div>
+
+                <div class="exp-project">
+                    <div class="exp-project-header">
+                        <p class="exp-project-title">사내 데이터 분석 툴 개발</p>
+                        <span class="exp-period">2022.10 – 2023.04</span>
+                    </div>
+                    <ul>
+                        <li>Pandas를 활용한 대용량 로그 데이터 처리 파이프라인 구축</li>
+                        <li>사용자 맞춤형 차트 및 시각화 컴포넌트 개발</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 네이버 -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3 class="exp-company">네이버</h3>
+                    <span class="exp-period">2022.06 – 2022.09</span>
+                </div>
+                <p class="exp-role">Frontend Developer <span class="exp-level">인턴</span></p>
+
+                <div class="exp-project">
+                    <div class="exp-project-header">
+                        <p class="exp-project-title">공통 UI 컴포넌트 라이브러리 개발</p>
+                        <span class="exp-period">2022.06 – 2022.09</span>
+                    </div>
+                    <ul>
+                        <li>React 기반의 사내 디자인 시스템 컴포넌트 개발 보조</li>
+                        <li>Storybook을 활용한 컴포넌트 문서화 및 테스트</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-item">
+                <span class="edu-period">2016 – 2022</span>
+                <span class="edu-name">한국대학교 (컴퓨터공학 전공)</span>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Awards -->
+        <section id="awards" class="section">
+            <h2 class="section-title">Awards</h2>
+            <div class="award-item">
+                <span class="award-period">2024.12</span>
+                <span class="award-name">올해의 우수사원상 (카카오게임즈)</span>
+            </div>
+            <div class="award-item">
+                <span class="award-period">2021.05</span>
+                <span class="award-name">교내 프로그래밍 경진대회 은상 (한국대학교)</span>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Certifications -->
+        <section id="certifications" class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-item">
+                <span class="cert-period">2023.11</span>
+                <span class="cert-name">정보처리기사 (한국산업인력공단)</span>
+            </div>
+            <div class="cert-item">
+                <span class="cert-period">2022.02</span>
+                <span class="cert-name">AWS Certified Solutions Architect - Associate</span>
+            </div>
+            <div class="cert-item">
+                <span class="cert-period">2021.08</span>
+                <span class="cert-name">SQL 개발자(SQLD)</span>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
