@@ -1,0 +1,177 @@
+/* ===== 전체 기본 설정 ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+/* ===== 토글 버튼 ===== */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a2e;
+    border: none;
+}
+
+.toggle-btn:hover {
+    background-color: #2d2d4e;
+}
+
+/* ===== Offcanvas 사이드바 ===== */
+.offcanvas {
+    background-color: #1a1a2e !important;
+    width: 200px !important;
+}
+
+.offcanvas-title {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.offcanvas nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.offcanvas nav ul li a:hover {
+    background-color: #2d2d4e;
+    color: #ffffff;
+}
+
+/* ===== 메인 콘텐츠 ===== */
+.main-content {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 60px;
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+/* ===== 프로필 헤더 ===== */
+.profile-header {
+    padding: 30px 0;
+}
+
+.profile-name {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 16px;
+}
+
+.profile-contacts span {
+    font-size: 14px;
+    color: #555555;
+}
+
+.profile-contacts a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.profile-image img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border: 2px solid #eeeeee;
+}
+
+/* ===== 섹션 공통 ===== */
+.section {
+    padding: 20px 0;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 4px solid #4a90e2;
+}
+
+/* ===== Introduce ===== */
+.introduce-text {
+    line-height: 1.8;
+    color: #444444;
+    font-size: 14px;
+}
+
+/* ===== Skills ===== */
+.skill-category {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888888;
+    letter-spacing: 1px;
+    min-width: 100px;
+    margin: 0;
+}
+
+.badge {
+    font-size: 13px !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    font-weight: 500 !important;
+}
+
+.badge.bg-secondary {
+    background-color: #f0f0f0 !important;
+    color: #444444 !important;
+}
+
+/* ===== Experience ===== */
+.exp-company {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+}
+
+.exp-role {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.exp-project-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 70px 24px 30px;
+    }
+
+    .profile-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 16px;
+    }
+
+    .profile-name {
+        font-size: 26px;
+    }
+}
