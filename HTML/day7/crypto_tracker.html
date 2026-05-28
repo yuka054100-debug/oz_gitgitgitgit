@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 암호화폐 가격 변동 추적기</title>
+    <link rel="stylesheet" href="crypto_style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>실시간 암호화폐 가격 변동 추적기</h1>
+
+    <!-- 탭 버튼 -->
+    <div class="tabs">
+        <button class="tab-btn active" id="tab-all">전체보기</button>
+        <button class="tab-btn" id="tab-favorites">관심항목</button>
+    </div>
+
+    <!-- 검색창 -->
+    <div class="search-wrap">
+        <input type="text" id="search-input" placeholder="심볼 검색 (예: BTCUSDT)">
+    </div>
+
+    <!-- 테이블 -->
+    <table>
+        <thead>
+            <tr>
+                <th>관심</th>
+                <th>심볼</th>
+                <th>현재가</th>
+                <th>24시간 변동률</th>
+                <th>최고가</th>
+                <th>최저가</th>
+            </tr>
+        </thead>
+        <tbody id="crypto-list">
+            <tr>
+                <td colspan="6" class="loading">데이터 불러오는 중...</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="crypto_tracker.js"></script>
+</body>
+</html>
